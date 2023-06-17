@@ -68,47 +68,29 @@
         </div>
         <div class="col-7">
             <div id="content-box">
+                
                 <div class="title-box png20">
-                    <div class="title">Hot Campaigns</div>
-                    <div class="desc">What is currently announced at the Habbo Hotel?</div>
+                    <div class="title">Dernières Actualités</div>
+                    <div class="desc">Qu'est-ce qui est annoncé actuellement au Habbo Hotel ?</div>
                 </div>
+                
                 <div class="png20">
+                    {% for CmsNews in allNews %}
                     <div class="campaigns">
                         <a href="">
                             <div class="img"
-                                style="background-image:url(https://sm.ign.com/ign_ap/screenshot/default/fgajfxrx0aaxmgs_2934.png)">
+                                style="background-image:url('{{ CmsNews.image }}')">
                             </div>
                             <div class="details">
-                                <div class="title">Lorem ipsum</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                <div class="title">{{ CmsNews.title }}</div>
+                                <div class="desc">{{ CmsNews.description }}
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="campaigns">
-                        <a href="">
-                            <div class="img"
-                                style="background-image:url(https://sm.ign.com/ign_ap/screenshot/default/fgajfxrx0aaxmgs_2934.png)">
-                            </div>
-                            <div class="details">
-                                <div class="title">Lorem ipsum</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="campaigns">
-                        <a href="">
-                            <div class="img"
-                                style="background-image:url(https://sm.ign.com/ign_ap/screenshot/default/fgajfxrx0aaxmgs_2934.png)">
-                            </div>
-                            <div class="details">
-                                <div class="title">Lorem ipsum</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    {% endfor %}
+
+                   
                 </div>
             </div>
         </div>

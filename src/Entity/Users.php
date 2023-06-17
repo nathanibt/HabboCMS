@@ -50,7 +50,7 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $rooms;
 
-        /**
+    /**
      * ORM\OneToMany(mappedBy: 'usertwoid', targetEntity: MessengersFriendships::class)
      */
     private $friends;
