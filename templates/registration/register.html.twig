@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Habbo: Wähle dein Geschlecht und dein Geburtsdatum!</title>
+
+        <link type="text/css" href="css/registration.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="logo"></div>
+            <div class="content-box" id="step-2">
+                <div class="title-box">
+                    <div class="title">Inscription</div>
+                </div>
+
+                <div class="png20">
+                    <form method="post">
+                         {{ form_start(registrationForm) }}
+                        {{ form_row(registrationForm.username) }}
+                       
+                        {{ form_row(registrationForm.plainPassword, {
+                                label: 'Password'
+                        }) }}
+                       
+                        
+
+                        <a href="{{ path('default') }}" class="btn red back-register">Retour</a>
+                        <button type="submit" class="btn green next-register">Inscription</button>
+                        {{ form_end(registrationForm) }}
+                        {# <label for="register-username">Nom d'utilisateur</label>
+                        <input type="text" id="register-username" name="register-username" value="">
+                        <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+                        <div class="alert">Vous devez avoir fourni un nom d'utilisateur.</div>
+							
+                        <label for="register-password">Mot de passe</label>
+                        <input type="password" id="register-password" name="register-password">
+                        <p class="desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+                        <div class="alert">Vous devez avoir fourni un mot de passe.</div>
+
+                        <a href="" class="btn red back-register">Connexion</a>
+                        <button type="submit" class="btn green next-register">Inscription</button> #}
+
+
+                        <div style="clear:both"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</html>
+{# 
+{% block body %}
+    <h1>Register</h1>
+
+
+{% endblock %} #}

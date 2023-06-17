@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class RoomsController extends AbstractController
+{
+    /**
+     * @Route("/rooms", name="app_rooms")
+     */
+    public function index(RoomsRepository $RoomsRepository): Response
+    {
+        
+        return $this->render('rooms/index.html.twig', [
+            'controller_name' => 'RoomsController',
+        ]);
+    }
+}

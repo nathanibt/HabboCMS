@@ -1,0 +1,10 @@
+
+    {% set has_users = false %}
+    {% for user in users %}
+    {% if user.rank == 7 %}
+    {% set has_users = true %}
+    {% endif %}
+    {% endfor %}
+    {% if not has_users %}
+    <h2 class="text-xl dark:text-white font-mono text-amber-600 font-bold mb-4">Aucun membre pour le moment</h2>
+    {% endif %}
