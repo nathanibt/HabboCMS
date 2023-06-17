@@ -38,6 +38,6 @@ Les contributions sont les bienvenues ! Si vous souhaitez améliorer ou ajouter 
 Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENSE](LICENSE) pour plus d'informations.
 
 ## Contact
-Si vous avez des questions, des suggestions ou des problèmes liés au CMS Habbo, n'hésitez pas à nous contacter à l'adresse suivante : [contact@habbocms.com](mailto:contact@habbocms.com).
+Si vous avez des questions, des suggestions ou des problèmes liés au CMS Habbo, n'hésitez pas à me contacter ici : [zorked#8888].
 
 Merci d'utiliser le CMS Habbo Open Source ! Nous espérons qu'il vous sera utile pour la création de votre rétro serveur Habbo.
