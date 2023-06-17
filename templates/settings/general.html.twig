@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+    <link type="text/css" href="css/settings.css" rel="stylesheet">
+
+    <div class="col-4">
+        <a href="{{ path('app_settings')}}" id="settings-navigation-box" class="selected">
+            <div class="png20">
+                <i class="far fa-envelope icon"></i>
+                <div class="settings-title">E-Mail Adresse ändern</div>
+                <div class="settings-desc">Lorem ipsum dolor sit amet,</div>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <a href="{{ path('app_settings_password')}}" id="settings-navigation-box">
+            <div class="png20">
+                <i class="far fa-lock-open-alt icon"></i>
+                <div class="settings-title">Passwort ändern</div>
+                <div class="settings-desc">Lorem ipsum dolor sit amet,</div>
+            </div>
+            <div class="clear"></div>
+        </a>
+    </div>
+    <div class="col-8">
+    <div class="alert failed">Du musst die Felder ausgefüllt haben.</div>
+    
+    <div id="content-box" style="height:570px">
+        <div class="title-box png20">
+            <div class="title">E-Mail Adresse ändern</div>
+        </div>
+    
+        <div class="png20">
+            <form method="post">
+                <label for="old-mail">Alte E-Mail Adresse</label>
+                <input type="email" id="old-mail" name="old_mail">
+                <div class="desc" style="margin: 0 0 20px 0">Bitte gebe deine alte E-Mail Adresse zur Identifizierung deines Accounts ein.</div>
+                <div class="line"></div>
+    
+                <label for="new-mail">Neue E-Mail Adresse</label>
+                <input type="email" id="new-mail" name="new_mail">
+                <div class="desc">Bitte gebe deine neue E-Mail Adresse ein.</div>
+    
+                <label for="new-mail-repeat">Neue E-Mail Adresse wiederholen</label>
+                <input type="email" id="new-mail-repeat" name="new_mail_repeat">
+                <div class="desc">Bitte gebe die neue E-Mail Adresse erneut ein, um Schreibfehler zu vermeiden.</div>
+    
+                <button class="btn green save">Speichern</button>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}
