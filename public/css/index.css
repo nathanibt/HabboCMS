@@ -158,6 +158,10 @@ body {
   background: #52be80;
 }
 
+.btn.purple {
+  background: #a600ff;
+}
+
 .btn.green:hover {
   background: #57ca89;
 }

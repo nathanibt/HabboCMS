@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="title-headline">Croupier</div>
+        </div>
+    </div>
+
+    
+
+    <div class="row">
+    {% set has_users = false %}
+    {% for user in users %}
+    {% if user.rank == 3 %}
+    {% set has_users = true %}
+        <div class="col-4">
+            <a href="" class="staff-box">
+                <div class="staff-header">
+                    <div class="header">
+                </div>
+                <div class="overlay"><div class="work">Croupier </div>
+                <div class="username">{{ user.username }}</div>
+            </div>
+        </div>
+                <div class="avatarimage" style="background-image:url(https://imaging.habibo.me/imaging/?figure={{ user.look }}&size=l)"></div>
+                <div class="clear"></div>
+                <div class="png">
+                    <div class="motto">{{ user.motto }}</div>
+                    {% if user.online == 1 %}
+                    <div class="online-status online"><div class="dot"></div></div>
+                        {% else %}
+                    <div class="online-status offline"><div class="dot"></div></div>
+                        {% endif %}
+                    
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </a>
+        </div>   
+
+        {% endif %}
+        {% endfor %}
+        
+    </div>
+    {% if not has_users %}
+        <div class="col-4">
+            <a href="" class="staff-box">
+                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Croupier</div><div class="username">Personne</div></div></div>
+                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
+                <div class="clear"></div>
+                <div class="png">
+                    <div class="motto">Personne</div>
+                    <div class="online-status offline"><div class="dot"></div></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </a>
+   
+        {% endif %}
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="title-headline">VIP</div>
+        </div>
+    </div>
+
+    <div class="row">
+        {% set has_users = false %}
+        {% for user in users %}
+        {% if user.rank == 2 %}
+        {% set has_users = true %}
+        <div class="col-4">
+            <a href="" class="staff-box">
+                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">VIP</div><div class="username">{{ user.username }}</div></div></div>
+                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
+                <div class="clear"></div>
+                <div class="png">
+                    <div class="motto">{{ user.motto }}</div>
+                    {% if user.online == 1 %}
+                    <div class="online-status online"><div class="dot"></div></div>
+                        {% else %}
+                    <div class="online-status offline"><div class="dot"></div></div>
+                        {% endif %}
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </a>
+        </div>
+        
+        {% endif %}
+        {% endfor %}
+        {% if not has_users %}
+        <div class="col-4">
+            <a href="" class="staff-box">
+                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">VIP</div><div class="username">Personne</div></div></div>
+                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
+                <div class="clear"></div>
+                <div class="png">
+                    <div class="motto">Personne</div>
+                    <div class="online-status offline"><div class="dot"></div></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+ 
+
+
+        
+        
+    </div>
+
+{% endblock %}

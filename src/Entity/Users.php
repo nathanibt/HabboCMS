@@ -2,11 +2,12 @@
 
 namespace App\Entity;
 
-use App\Repository\UsersRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\UsersRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
-use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UsersRepository::class)
@@ -27,6 +28,11 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     private $username;
 
     /**
+     * @ORM\Column(type="string", length=180, unique=true)
+     */
+    private $mail;
+
+    /**
      * @ORM\Column(type="string", length=180, unique=true, options={"default"="Nouveau ici"})
      */
     private ?string $motto = 'Nouveau sur Bobba';
@@ -41,10 +47,14 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string")
      */
     private ?string $look = 'hr-115-42.hd-195-19.ch-3030-82.lg-275-1408.fa-1201.ca-1804-64';
- /**
+    
+    
+    /**
      * @ORM\Column(type="integer")
      */
     private ?int $online = 0;
+
+
     /**
      * ORM\OneToMany(mappedBy: 'owner', targetEntity: Rooms::class)
      */
@@ -67,6 +77,8 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $password;
 
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -83,6 +95,17 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     public function setUsername(string $username): self
     {
         $this->username = $username;
+
+        return $this;
+    }
+    public function getMail(): string
+    {
+        return (string) $this->mail;
+    }
+
+    public function setMail(string $mail): self
+    {
+        $this->mail = $mail;
 
         return $this;
     }
@@ -120,6 +143,15 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     {
         return  $this->online;
     }
+
+    public function setOnline($online): ?int
+    {        
+        $this->online = $online;
+
+        return $this;
+    } 
+
+
     public function getRooms(): ?ArrayCollection
     {
         return $this->rooms;
@@ -195,6 +227,7 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
         $this->friends = new ArrayCollection();
 
     }
+
     
     
 }
