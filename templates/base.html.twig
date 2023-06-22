@@ -27,9 +27,10 @@
                     <div class="hotel"></div>
 
                     <div class="online-count-box"><b>Qu'attends-tu?</b>Connecte toi</div>
-
                     <a href="client" class="btn green big check-in-header" target="_blank">HOTEL NITRO</a>
+                   
                 </div>
+               
             </div>
         </div>
     </div>
@@ -51,6 +52,9 @@
 
                             <ul class="user-subnavi">
                                 <li><a href="{{ path('app_profile')}}">Mon profil</a></li>
+                                {% if app.user.rank > 5 %}
+                                <li><a href="{{ path('app_logout')}}" class="logout">Administration</a></li>
+                                {% endif %}
                                 <li><a href="{{ path('app_logout')}}" class="logout">Deconnexion</a></li>
                             </ul>
                         </li>
