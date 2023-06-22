@@ -75,16 +75,15 @@
                 </div>
                 
                 <div class="png20">
-                    {% for CmsNews in allNews %}
+                    {% for CmsActualites in allNews %}
                     <div class="campaigns">
-                        <a href="">
+                        <a href="{{ path('me_news', { 'id': CmsActualites.id })}}">
                             <div class="img"
-                                style="background-image:url('{{ CmsNews.image }}')">
+                                style="background-image:url('{{ CmsActualites.image }}')">
                             </div>
                             <div class="details">
-                                <div class="title">{{ CmsNews.title }}</div>
-                                <div class="desc">{{ CmsNews.description }}
-                                </div>
+                                <div class="title">{{ CmsActualites.title }}</div>
+                                <div class="desc">{{ CmsActualites.description }}</div>
                             </div>
                         </a>
                     </div>

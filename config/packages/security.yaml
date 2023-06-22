@@ -10,11 +10,15 @@ security:
             entity:
                 class: App\Entity\Users
                 property: username
+
+
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
+            
             remember_me:
                 secret:   '%kernel.secret%' # required
                 lifetime: 604800 # 1 week in seconds
@@ -30,6 +34,7 @@ security:
                 path: app_logout
                 # where to redirect after logout
                 # target: app_any_route
+
             
                 
 

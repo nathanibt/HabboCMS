@@ -2,26 +2,26 @@
 
 namespace App\Repository;
 
-use App\Entity\CmsNews;
+use App\Entity\CmsActualites;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<CmsNews>
+ * @extends ServiceEntityRepository<CmsActualites>
  *
- * @method CmsNews|null find($id, $lockMode = null, $lockVersion = null)
- * @method CmsNews|null findOneBy(array $criteria, array $orderBy = null)
- * @method CmsNews[]    findAll()
- * @method CmsNews[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method CmsActualites|null find($id, $lockMode = null, $lockVersion = null)
+ * @method CmsActualites|null findOneBy(array $criteria, array $orderBy = null)
+ * @method CmsActualites[]    findAll()
+ * @method CmsActualites[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class CmsNewsRepository extends ServiceEntityRepository
+class CmsActualitesRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, CmsNews::class);
+        parent::__construct($registry, CmsActualites::class);
     }
 
-    public function add(CmsNews $entity, bool $flush = false): void
+    public function add(CmsActualites $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -30,7 +30,7 @@ class CmsNewsRepository extends ServiceEntityRepository
         }
     }
 
-    public function remove(CmsNews $entity, bool $flush = false): void
+    public function remove(CmsActualites $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
 
@@ -40,7 +40,7 @@ class CmsNewsRepository extends ServiceEntityRepository
     }
 
 //    /**
-//     * @return CmsNews[] Returns an array of CmsNews objects
+//     * @return CmsActualites[] Returns an array of CmsActualites objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -54,7 +54,7 @@ class CmsNewsRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?CmsNews
+//    public function findOneBySomeField($value): ?CmsActualites
 //    {
 //        return $this->createQueryBuilder('c')
 //            ->andWhere('c.exampleField = :val')

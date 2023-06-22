@@ -8609,6 +8609,11 @@ body {
   background: #52be80;
 }
 
+.btn.red {
+  background: #ff0000;
+}
+
+
 .btn.green:hover {
   background: #57ca89;
 }
