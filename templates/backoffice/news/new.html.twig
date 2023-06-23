@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New CmsActualites{% endblock %}
+
+{% block body %}
+    <h1>Create new CmsActualites</h1>
+
+    {{ include('backoffice/news/_form.html.twig') }}
+
+    <a href="{{ path('app_backoffice_news_index') }}">back to list</a>
+{% endblock %}
