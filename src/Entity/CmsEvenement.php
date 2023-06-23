@@ -33,7 +33,7 @@ class CmsEvenement
      */
     private $datedebut;
 
-        /**
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $datefin;
@@ -67,23 +67,23 @@ class CmsEvenement
         return $this;
     }
 
-    public function getDateDebut(): ?string
+    public function getDatedebut(): ?string
     {
         return $this->datedebut;
     }
 
-    public function setDateDebut(string $date): self
+    public function setDatedebut(string $datedebut): self
     {
         $this->datedebut = $datedebut;
 
         return $this;
     }
-    public function getDateFin(): ?string
+    public function getdatefin(): ?string
     {
         return $this->datefin;
     }
 
-    public function setDateFin(string $date): self
+    public function setDatefin(string $datefin): self
     {
         $this->datefin = $datefin;
 
