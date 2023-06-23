@@ -123,5 +123,32 @@
 
                 </div>
             </div>
+            <div class="col-12">
+
+                <div id="content-box" style="max-height:300px">
+                    <div class="title-box png20">
+                        <div class="title">Musiques de la semaine </div>
+                        <div class="desc">Découvrez les musiques de la semaine sur Habbo</div>
+                    </div>
+    
+                    <div class="png20" >
+                        {% for CmsMusique in allMusique %}
+                        <div class="event">
+    
+                            <div class="icon" style="width:13%">
+                                <img class="imagemusique" src="{{ CmsMusique.image }}" ></img>
+                            </div>
+                            <div class="info" style="width:87%">
+    
+                                <div class="event_title">{{ CmsMusique.title }}</div>
+                                <div style="clear: both"></div>
+                                <div class="event_desc"> Clique <a href="{{ CmsMusique.link }}" target="_blank" >ici</a> pour ecouter </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                       {% endfor %}
+    
+                    </div>
+                </div>
         </div>
         {% endblock %}

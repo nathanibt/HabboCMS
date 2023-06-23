@@ -8997,6 +8997,14 @@ body {
   left: 10px;
 }
 
+.imagemusique {
+  float: left;
+  width: 70%;
+  position: relative;
+  right: 10px;
+  top: -5px;
+}
+
 .event .info {
   float: right;
   width: 90%;
