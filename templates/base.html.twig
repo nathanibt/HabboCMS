@@ -6,9 +6,9 @@
 
     <title>Habbo: {{ app.user.username }}</title>
 
+    <link rel="icon"  href="favicon.ico" />
     <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
     {% block stylesheets %}
     {{ encore_entry_link_tags('app') }}
@@ -25,8 +25,6 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hotel"></div>
-
-                    <div class="online-count-box"><b>Qu'attends-tu?</b>Connecte toi</div>
                     <a href="client" class="btn green big check-in-header" target="_blank">HOTEL NITRO</a>
                    
                 </div>
