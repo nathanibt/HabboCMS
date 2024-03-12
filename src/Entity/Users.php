@@ -35,7 +35,7 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true, options={"default"="Nouveau ici"})
      */
-    private ?string $motto = 'Nouveau sur Bobba';
+    private ?string $motto = 'Nouveau sur BackHabbo';
 
 
     /**
@@ -76,6 +76,17 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string")
      */
     private $password;
+ 
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $credits = 100000;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $pixels = 1000;
+
 
 
 
@@ -196,6 +207,30 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     public function setPassword(string $password): self
     {
         $this->password = $password;
+
+        return $this;
+    }
+
+    public function getCredits(): string
+    {
+        return $this->credits;
+    }
+
+    public function setCredits(string $credits): self
+    {
+        $this->credits = $credits;
+
+        return $this;
+    }
+
+    public function getPixels(): string
+    {
+        return $this->pixels;
+    }
+
+    public function setPixels(string $pixels): self
+    {
+        $this->pixels = $pixels;
 
         return $this;
     }

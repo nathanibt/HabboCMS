@@ -3,9 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Users;
+use App\Entity\CmsMusique;
 use App\Entity\CmsEvenement;
 use App\Entity\CmsActualites;
-use App\Entity\CmsMusique;
+use App\Repository\RoomsRepository;
 use App\Repository\UsersRepository;
 use App\Security\UsersAuthenticator;
 use App\Repository\CmsMusiqueRepository;
@@ -23,12 +24,16 @@ class MeController extends AbstractController
      */
     public function index(EntityManagerInterface $entityManager, CmsEvenementRepository $CmsEvenementRepository,  CmsActualitesRepository $CmsActualitesRepository, CmsMusiqueRepository $CmsMusiqueRepository): Response
     {
+        $user = $this->getUser();
+
         $allEventFromBDD = $CmsEvenementRepository->findAll();
 
         $allMusiqueFromBDD = $CmsMusiqueRepository->findAll();
  
-        $allNewsFromBDD = $CmsActualitesRepository->findBy([], ['createdAt' => 'DESC'], 3);
+        $allNewsFromBDD = $CmsActualitesRepository->findBy([], ['id' => 'ASC'], 1);
 
+
+       
         return $this->render('me/index.html.twig', [
             'allEvents' => $allEventFromBDD,
             'allMusique' => $allMusiqueFromBDD,

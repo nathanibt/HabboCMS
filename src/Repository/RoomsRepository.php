@@ -39,6 +39,17 @@ class RoomsRepository extends ServiceEntityRepository
         }
     }
 
+    public function getRoomsUsers(string $rooms)
+    {
+        $qb = $this->createQueryBuilder('b')
+            ->select('r.name')
+            ->setParameter('rooms', '%'.$rooms.'%')
+            ->addOrderBy('r.users', 'DESC', 3)
+            ->getQuery();
+
+        return $qb->getResult();
+    }
+
 //    /**
 //     * @return Rooms[] Returns an array of Rooms objects
 //     */

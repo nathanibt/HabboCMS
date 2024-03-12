@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+<div class="contenu" style="width: 980px;">
+    <div class="trentetrois">
+        <div class="box">
+            <div class="titre bleu">Top des crédits</div>
+            {% for userExperiences in userExperiences %}
+            <div class="contenu_box" style="margin-bottom: -5px">
+                
+                <div class="classement">
+                    
+                    <div class="classement2">
+                        
+                        <a href="./user/">
+                            <img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=m">
+                        </a></div>
+                    <div class="pseudo">{{ userExperiences.username }} </div>
+                    <div class="points">{{ userExperiences.credits }} </div>
+                    
+                </div>
+
+               
+            </div>{% endfor %}
+        </div> 
+    </div>
+
+
+<div class="trentetrois">
+<div class="box">
+    <div class="titre rouge">Top des duckets</div>
+    <div class="contenu_box" style="margin-bottom: -5px">
+        
+        <div class="classement">
+            <div class="classement2">
+                <a href="./user/">
+                    <img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=m">
+                </a></div>
+            <div class="pseudo">Ayato</div>
+            <div class="points">10 duckets</div>
+        </div>
+    
+    </div>
+</div>
+</div>
+
+<div class="trentetrois">
+<div class="box">
+    <div class="titre jaune">Top de connexion</div>
+    <div class="contenu_box" style="margin-bottom: -5px">
+
+        <div class="classement">
+            <div class="classement2">
+                <a href="./user/">
+                    <img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=m">
+                </a></div>
+            <div class="pseudo">Ayato</div>
+            <div class="points">300 heures</div>
+        </div>
+
+        
+    </div>
+</div>
+</div>
+{% endblock %}

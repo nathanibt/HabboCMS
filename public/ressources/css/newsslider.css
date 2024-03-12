@@ -1,0 +1,120 @@
+#promo-box {
+    width: 100%;
+    height: 180px;
+    transition: opacity 2s ease-in;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    position: relative;
+    background: no-repeat center right;
+}
+
+#promo-box #promo-bullets {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 12px;
+    padding: 20px 0 18px 20px;
+    z-index: 30;
+}
+
+#promo-box #promo-bullets a {
+    background-color: #fff;
+    float: left;
+    height: 12px;
+    margin-right: 10px;
+    text-indent: -9999px;
+    width: 12px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    opacity: .3;
+    outline: 0;
+    cursor: pointer;
+}
+
+#promo-box #promo-bullets a:hover,
+#promo-box #promo-bullets a.active {
+    opacity: 1.0
+}
+
+#promo-box .promo-container {
+    position: absolute;
+    width: 100%;
+    height: 188px;
+    z-index: 20;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    /* display: block !important; */
+    z-index: 0;
+    background: no-repeat center right;
+}
+
+#promo-box .promo-container .promo-content-container {
+    padding: 25px 0 0 20px;
+    margin-top: 10px;
+}
+
+#promo-box .promo-container .promo-link-container {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 64px;
+}
+
+#promo-box .promo-container .promo-content-container .promo-content {
+    width: 380px;
+    color: #fff
+}
+
+#promo-box .promo-container .promo-content-container .promo-content .title {
+    font: 500 25px 'Roboto';
+    margin-bottom: 6px;
+}
+
+#promo-box .promo-container .promo-content-container .promo-content .body {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+#promo-box {
+    width: 100%;
+    height: 187px;
+    position: relative;
+    z-index: 0;
+}
+
+#promo-box #promo-bullets {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 400px;
+    height: 12px;
+    padding: 20px 0 18px 20px;
+    z-index: 1;
+}
+
+.promo-link-container #newsButton {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    padding: 5px;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 40px;
+    border: 1px #2f8fa7 solid;
+    border-radius: 27px;
+    text-align: center;
+    width: 178px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 140%;
+    color: #fff;
+    border-radius: 11px;
+    background: linear-gradient(to bottom, #7ace6f 0%, #7ace6f 49%, #66c75a 49%, #66c75a 99%);
+    font-family: Calibri, sans-serif;
+    text-shadow: 0px 2px 0px #00000045;
+    line-height: 0;
+    bottom: 14px;
+}

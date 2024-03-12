@@ -1,0 +1,1422 @@
+
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+@font-face{font-family:normal;src:url(../font/power.woff2)}
+@font-face{font-family:habbofont;src:url(../font/habbfont.woff2)}
+.mediaViewInfo {
+	--web-view-name: Web 1366 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 1;
+	--web-view-id: Web_1366___1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1366___1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.containerrr {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 100%;
+	height: 768px;
+	background-color: rgba(245,245,245,1);
+	overflow: hidden;
+	--web-view-name: Web 1366 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 1;
+	--web-view-id: Web_1366___1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+	margin: 0;
+	padding: 0;
+	top: 0;
+}
+.Header_Class {
+	width: 100%;
+	height: 418.938px;
+	top: 0px;
+	overflow: visible;
+}
+.header_img {
+	position: absolute;
+	overflow: visible;
+	width: 100%;
+	height: 244px;
+	background-size: 2567px;
+	top: 0px;
+	background-image: url(../img/topbg/header_img_A0_Rectangle_2_pattern.png);
+	background-repeat: no-repeat;
+}
+.Nuage {
+	position: absolute;
+	overflow: visible;
+	width: 1027px;
+	height: 285px;
+	left: 731px;
+	zoom: 1.4;
+	top: 11px;
+}
+.Nuage_A0_Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 1195px;
+	height: 333px;
+	left: 0px;
+	top: 51px;
+}
+.Menu_Class {
+	position: relative;
+	margin: auto;
+	width: 1059px;
+	height: 282.938px;
+	top: 170px;
+	overflow: visible;
+}
+.Menu_bar {
+	overflow: visible;
+	position: absolute;
+	width: 1044.325px;
+	height: 103px;
+	left: 7.388px;
+	top: 80.614px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Submenu_bar {
+	overflow: visible;
+	position: absolute;
+	width: 1044.325px;
+	height: 46.774px;
+	left: 7.388px;
+	top: 179.946px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.user_onlinebar {
+	overflow: visible;
+	position: absolute;
+	width: 126.549px;
+	height: 324.365px;
+	transform: translate(7.388px, -84.666px) matrix(1,0,0,1,643.8175,114.9459) rotate(100deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Left_submenu_Class {
+	position: absolute;
+	width: 336.496px;
+	height: 25px;
+	left: 25.504px;
+	top: 192px;
+	overflow: visible;
+}
+.fleche {
+	overflow: visible;
+	position: absolute;
+	width: 15.243px;
+	height: 8.732px;
+	left: 0px;
+	top: 9.971px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.text_submenu_Class {
+	position: absolute;
+	left: 18.496px;
+	top: 0px;
+	overflow: visible;
+	width: 66px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+}
+.fleche_A0_Path_5 {
+	overflow: visible;
+	position: absolute;
+	width: 15.243px;
+	height: 8.732px;
+	left: 95px;
+	top: 9.971px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.text_submenu_A0_Text_2_Class {
+	position: absolute;
+	left: 113.496px;
+	top: 0px;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+}
+.fleche_A0_Path_6 {
+	overflow: visible;
+	position: absolute;
+	width: 15.243px;
+	height: 8.732px;
+	left: 229px;
+	top: 9.971px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.text_submenu_A0_Text_3_Class {
+	position: absolute;
+	left: 247.496px;
+	top: 0px;
+	overflow: visible;
+	width: 90px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+}
+.Right_submenu_Class {
+	position: absolute;
+	width: 454px;
+	height: 45px;
+	left: 591px;
+	top: 181px;
+	overflow: visible;
+}
+.users_connected_Class {
+	filter: drop-shadow(0px 3px 6px rgba(255, 255, 255, 0.655));
+	position: absolute;
+	left: 46px;
+	top: 15px;
+	overflow: visible;
+	width: 177px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+.icon_hotel {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+}
+.icon_key {
+	position: absolute;
+	overflow: visible;
+	width: 43px;
+	height: 40px;
+	left: 281px;
+	top: 2px;
+}
+.text_enter_Class {
+	filter: drop-shadow(0px 3px 6px rgba(255, 255, 255, 0.655));
+	position: absolute;
+	left: 332px;
+	top: 12px;
+	overflow: visible;
+	width: 123px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+.menu_icons {
+	position: absolute;
+	overflow: visible;
+	width: 553px;
+	height: 83px;
+	left: 498px;
+	top: 97px;
+	background-image: url(../img/icons/menu.png);
+}
+
+
+.home_icon {
+	position: absolute;
+	overflow: visible;
+	width: 94px;
+	height: 53px;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+
+.fleche_A0_Path_11 {
+    overflow: visible;
+    position: absolute;
+    width: 15.243px;
+    height: 8.732px;
+    left: 355px;
+    top: 9.971px;
+    transform: matrix(1,0,0,1,0,0);
+}.text_submenu_A0_Text_11_Class {
+    position: absolute;
+    left: 375.496px;
+    top: 0px;
+    overflow: visible;
+    width: 90px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(255,255,255,1);
+}
+.box-container {margin: auto;width: 1043px;position: relative;margin-top: 412px;}
+
+
+.grid-left-user {
+    float: left;
+    width: 32.49%;
+}
+.grid-right-news {
+    float: right;
+    width: 66%;
+}
+.grid-left-1 {
+    float: LEFT;
+    width: 25%;
+}
+.grid-left-2 {
+    float: LEFT;
+    width: 31%;
+}
+.grid-right-2 {
+    float: right;
+    width: 41.5%;
+}
+.grid-right {
+    float: right;
+    width: 66%;
+}
+.box-user {
+	width: 100%;
+	background-image: url(../img/gallery/htlview_sg.png);
+	border: 2px white;
+	height: 187px;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	background-blend-mode: screen;
+	background-color: #4c90aa;
+}
+.left-user {
+	top: 122px;
+	position: relative;
+	background-image: url(../img/gallery/info_habbo_plate.png);
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 8px;
+	height: 68px;
+}
+.center-info {
+	margin: auto;
+	width: 214px;
+	background-color: #00000078;
+	height: 187px;
+	margin-left: 125px;
+}
+
+.txt_icon {
+	color: #ffffff;
+	font-family: normal;
+	font-weight: 100;
+	font-size: 17px;
+	margin-left: 33px;
+	width: 147px;
+	line-height: 1.5;
+}
+.right {
+	float: right;
+}
+.icons {
+	width: 23px;
+	height: 27px;
+	margin-left: 13px;
+	margin-top: 20px;
+	/* filter: invert(1); */
+}
+.rightbutton {
+	
+}
+.grid-cont  {
+	margin: auto;
+	width: 100%;
+	display: inline-block;
+	height: 122px;
+}
+.box-facebook {
+	background-color: white;
+	width: 20%;
+	padding: 22px;
+	background: #fff;
+	border-radius: 2px;
+	position: relative;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+	margin-bottom: 10px;
+	display: inline-flex;
+}
+
+.box-insta {
+	background-color: white;
+	width: 20%;
+	padding: 22px;
+	background: #fff;
+	border-radius: 2px;
+	position: relative;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+	margin-bottom: 10px;
+	display: inline-flex;
+	margin-left: 7px;
+}
+.box-fan {
+	background-color: white;
+	width: 57.84%;
+	padding: 22px;
+	background: #fff;
+	border-radius: 2px;
+	position: relative;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+	margin-bottom: 10px;
+	display: inline-flex;
+	margin-left: 7px;
+	height: 108px;
+	top: -26px;
+}
+
+.facebook {
+	background-image: url(https://www.habbix.ws/uploads/campaigns/facebook.png);
+}
+.discord {
+	background-image: url(https://www.habbix.ws/uploads/campaigns/discord.png);
+	background-position: center;
+}
+.insta {
+	background-image: url(https://www.habbix.ws/uploads/campaigns/instagram.png);
+}
+
+.fan {
+	background-image: url(https://habbofont.net/font/paradise/MobbaFAN.gif);
+	background-position: 50%;
+	width: 100%;
+}
+.box-titre {
+	line-height: 4;
+	font-family: Roboto;
+	font-weight: 400;
+}
+.boxleftt {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+}
+.titre-boxleftt {
+    clear: both;
+    min-height: 68px;
+    padding: 10px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+}
+.titre-boxright {
+    clear: both;
+    padding: 10px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 17px;
+    font-weight: 500;
+    border-right: 1px solid #eee;
+    font-family: Roboto, sans-serif;
+    width: 34%;
+}
+.boxleftt-corp {
+    height: 302px;
+}
+.image-appart {
+    height: 63px;
+    width: 73px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/terapia_home.gif);
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 0px;
+    margin-top: -14px;
+}
+.mesbadgestitre {
+    line-height: 44px;
+}
+.image-groups {
+    height: 63px;
+    width: 73px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/CCZenThumb4.png);
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 0px;
+    margin-top: -14px;
+}
+.image-badges {
+    height: 63px;
+    width: 73px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/habboway.gif);
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 0px;
+    margin-top: -14px;
+}
+.image-events {
+    height: 63px;
+    width: 73px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/corda_home.gif);
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 0px;
+    margin-top: -14px;
+}
+.infos-boxleft {
+    color: rgba(0,0,0,0.5);
+    font-size: 12px;
+    font-family: roboto;
+    display: grid;
+}
+.appartsbox {
+    width: 100%;
+    border-bottom: 1px #607d8b42 solid;
+    padding: 13px;
+}
+.titreevent {
+    background-image: url(../img/icons/room_icon_2.gif);
+    height: 33px;
+    width: 224px;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding-left: 38px;
+    line-height: 35px;
+
+    overflow: hidden;
+}
+.titreapparts {
+    background-image: url(../img/icons/room_icon_2.gif);
+    height: 33px;
+    width: 136px;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding-left: 38px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.titreappartsvogue {
+    background-image: url(../img/icons/room_icon_4.gif);
+    height: 33px;
+    width: 136px;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding-left: 38px;
+    line-height: 35px;
+    overflow: hidden;	
+}
+.buttonappart {
+    float: right;
+    text-align: center;
+    width: 67px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 11px;
+    background: linear-gradient(to bottom, #7ace6f 0%, #7ace6f 49%, #66c75a 49%, #66c75a 99%);
+    font-family: Calibri, sans-serif;
+    text-shadow: 0px 2px 0px #00000045;
+    line-height: 0;
+    margin-top: -32px;
+}
+.boxright-badge-corp {
+    margin: auto;
+    width: 366px;
+    display: flex;
+    margin-left: 8px;
+}
+.minibadgebox {
+    background-color: #bdbdbd87;
+    margin-left: 7px;
+    width: 65px;
+    height: 65px;
+}
+.imgbadge {
+    filter: drop-shadow(2px 4px 6px white);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.eventsbox {
+    width: 100%;
+    border-bottom: 1px #607d8b42 solid;
+    padding: 13px;
+}
+.ndj {
+    background-image: url(../img/icons/GA1.gif);
+}
+.dateevent {
+    float: right;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #00000070;
+    border-radius: 11px;
+    font-family: Roboto, sans-serif;
+    line-height: 0;
+    margin-top: -32px;
+    font-weight: 500;
+}
+.footer {
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-top: 89px;
+    position: relative;
+    height: 90px;
+    display: flow-root;
+    margin-bottom: 11px;
+}
+.footer-left {
+    float: left;
+}
+.text-footer {
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    font-weight: initial;
+    padding: 7px;
+}
+.footer-right {
+    float: right;
+}
+.minimobbalogo {
+    background-image: url(https://habbofont.net/font/habbo/mobba.gif);
+    width: 85px;
+    height: 49px;
+    background-repeat: no-repeat;
+    float: right;
+    background-position: 73% 59%;
+}
+.footer-contain {
+    float: left;
+    width: 644px;
+    display: flex;
+    padding-top: -23px;
+}
+.footer-links {
+    color: black !important;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    padding-left: 8px;
+    margin-top: -5px;
+}
+
+.selected {
+	font-weight: 500;
+}
+.grid-left {
+    float: left;
+    width: 33%;
+}
+.boxmdp {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+}
+.head {
+    clear: both;
+    min-height: 50px;
+    padding: 10px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto, sans-serif;
+}
+.badgeImage {
+    height: 86px;
+    width: 60px;
+    background-repeat: repeat-x;
+    background-position: left center;
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 14px;
+    margin-top: -14px;
+}
+.mdp {
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/small_makeover.jpg);
+}
+.date {
+    color: rgba(0,0,0,0.5);
+    font-size: 12px;
+}
+.text {
+    display: block;
+    transition-property: all;
+    transition-duration: .50s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: Roboto, sans-serif;
+}
+.save {
+    position: relative;
+    right: 0px;
+    bottom: 20px;
+    font-size: 18px;
+    padding: 5px;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 40px;
+    border: 2px #2f8fa7 solid;
+    border-radius: 27px;
+    text-align: center;
+    width: 178px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 140%;
+    color: #fff;
+    border-radius: 11px;
+    background: linear-gradient(to bottom, #7ace6f 0%, #7ace6f 49%, #66c75a 49%, #66c75a 99%);
+    font-family: Calibri, sans-serif;
+    text-shadow: 0px 2px 0px #00000045;
+    line-height: 0;
+    bottom: 1px;
+}
+.boxmail {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+}
+.mail {
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/article_60_x_60.png);
+    margin-top: -26px;
+}
+
+input[type=password] {
+    outline: none;
+    width: 100%;
+    border: 1px solid #afacac;
+    padding: 5px;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type=email] {
+    outline: none;
+    width: 100%;
+    border: 1px solid #afacac;
+    padding: 5px;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+input[type=text] {
+    outline: none;
+    width: 67%;
+    border: 1px solid #afacac;
+    padding: 5px;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    bottom: 0px;
+    position: absolute;
+}
+.box-mini-close {width: 100%;border-bottom: 1px #607d8b42 solid;padding: 13px;}
+
+.titre-livreor {
+	height: 33px;
+	width: 298px;
+	background-repeat: no-repeat;
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	padding-left: 47px;
+	line-height: 60px;
+	overflow: hidden;
+}
+
+.buttonlor {
+	    float: right;
+	    text-align: center;
+	    width: 84px;
+	    padding-top: 14px;
+	    padding-bottom: 14px;
+	    cursor: pointer;
+	    font-size: 14px;
+	    color: #fff;
+	    border-radius: 11px;
+	    background: linear-gradient(to bottom, #7ace6f 0%, #7ace6f 49%, #66c75a 49%, #66c75a 99%);
+	    font-family: Calibri, sans-serif;
+	    text-shadow: 0px 2px 0px #00000045;
+	    line-height: 0;
+	    bottom: 9px;
+	    height: 30px;
+	    position: absolute;
+	    margin-left: 237px;
+}
+
+.user-profil-box {
+	width: 157px;
+    height: 231px;
+    float: left;
+    background-color: #ffffff7a;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.badge-profil-box {
+    width: 489px;
+    height: 113px;
+    float: right;
+    background-color: #ffffff7a;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.groups-profil-box {
+	width: 489px;
+    height: 110px;
+    float: right;
+    background-color: #ffffff7a;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.rooms-profil-box {
+	width: 653px;
+    height: 117px;
+    background-color: #ffffff7a;
+    margin-left: 8px;
+    margin-bottom: 17px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.box-groups {
+	background: #fff;
+	border-radius: 2px;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+	margin-bottom: 10px;
+}
+.titreappartsstaffs {
+    background-image: url(http://game.mobbahotel.fr/c_images/album1584/ADM.gif);
+    height: 50px;
+    width: 212px;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding-left: 58px;
+    line-height: 53px;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.staffsimg {
+    background-image: url(http://game.mobbahotel.fr/c_images/album1584/ADM.gif);
+    background-repeat: repeat-x;
+    width: 56px;
+    background-position: 0% 25%;
+    height: 66px;
+}
+.card-staffs {
+    margin: auto;
+    width: 303px;
+    height: 138px;
+    margin-top: 11px;
+    border-radius: 7px;
+    background-image: url(../img/gallery/STAFFS.png);
+    background-repeat: no-repeat;
+}
+
+.card-staffs {}
+.look-staffs {
+    width: 120px;
+    height: 148px;
+    -webkit-filter: drop-shadow(3px 1px 0 #fff) drop-shadow(-3px 2px 0 #fff) drop-shadow(0 -3px 0 #fff);
+    background-position: 73% 9%;
+    background-repeat: no-repeat;
+}
+.pseudo-staffs {
+    float: right;
+    margin-right: 23px;
+    margin-top: -122px;
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    width: 155px;
+    font-weight: 400;
+}
+.motto-staffs {
+    float: right;
+    margin-right: 21px;
+    margin-top: -96px;
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    width: 155px;
+    font-weight: 400;
+    max-width: 155px;
+    overflow: hidden;
+    height: 14px;
+}
+.onlinestaffs {
+    height: 34px;
+    float: right;
+    margin-right: 21px;
+    margin-top: -70px;
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    width: 155px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.buttonstaffs {
+    height: 20px;
+    float: right;
+    margin-right: 24px;
+    margin-top: -40px;
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    width: 146px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.card-staffs1 {
+    margin: auto;
+    width: 303px;
+    height: 138px;
+    margin-top: 11px;
+    border-radius: 7px;
+    background-image: url(../img/gallery/STAFFS.png);
+    background-repeat: no-repeat;
+    display: table-cell;
+    position: inherit;
+}
+
+.account-title {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 55px;
+    padding: 0 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: Roboto;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.account-title span {
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+}
+
+.loupsimg {
+    background-image: url(http://game.mobbahotel.fr/c_images/album1584/GLK.gif);
+    background-repeat: no-repeat;
+    width: 56px;
+    background-position: 13% 100%;
+    height: 50px;
+}
+
+.fansite {
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/event_TGIF.jpg);
+}
+.rsx {
+    background-image: url(https://pixel.retrotimes.co/contents/smallimages/pimp_glasspinne.gif);
+}
+
+.titrenews {
+    background-image: url(../img/icons/news.gif);
+    height: auto;
+    width: 223px;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    padding-left: 43px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.titre-boxleft-news {
+    clear: both;
+    min-height: 68px;
+    padding: 10px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 17px;
+    line-height: 54px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+}
+.image-newsap {
+    height: 63px;
+    width: 110px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/gallery/PaperWork.gif);
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 0px;
+    margin-top: -17px;
+    margin-left: -16px;
+}
+
+
+.activity {
+    min-height: 70px;
+    color: #494949;
+    position: relative;
+}
+
+.activity .head {
+    clear: both;
+    min-height: 50px;
+    padding: 10px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.activity .head .badgeImage {
+    height: 69px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url('../img/icons/habbo.png');
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 0;
+    margin-top: -14px;
+}
+
+.activity .head .habbo {
+	background-image: url('../img/icons/habbo.png');
+}
+
+.activity .head .fansite {
+	background-image: url('../img/icons/fansite.png');
+}
+
+.activity .head .mdp {
+    background-image: url('../img/icons/password.png');
+}
+
+.activity .head .cam {
+    background-image: url('../img/icons/cam.png');
+}
+
+.activity .head .mail {
+    background-image: url('../img/icons/mail.png');
+}
+
+.activity .head .staff {
+    background-image: url('../img/icons/staff.png');
+}
+
+.activity .head .information {
+    background-image: url('../img/icons/guide.png');
+}
+
+.activity .head .jeux {
+    background-image: url('../img/icons/jeux.png');
+}
+
+.activity .head .concours {
+    background-image: url('../img/icons/concours.png');
+}
+
+.activity .head .trade {
+	background-image: url('../img/icons/trade.gif');
+}
+
+.activity .head .couple {
+    background-image: url('../img/icons/couple.gif');
+}
+
+.activity .head .thumb {
+	background-image: url('../img/icons/thumb.png');
+}
+
+.activity .head .guide {
+	background-image: url('../img/icons/guide.png');
+}
+
+.activity .head .attention {
+    background-image: url('../img/icons/attention.png');
+}
+
+.activity .head span.date {
+    color: rgba(0,0,0,0.5);
+    font-size: 12px;
+}
+
+.activity .text {
+    display: block;
+    transition-property: all;
+    transition-duration: .50s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+    padding: 10px 15px;
+	font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.activity .btns {
+    position: relative;
+    color: #FFFFFF;
+    clear: both;
+    width: 100%;
+}
+
+.grid_18 {
+	    float: right;
+    width: 74%;
+}
+#contentBox {
+	    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+}
+
+.box {
+		    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+}
+
+
+.shop-menu {
+    background-image: url(../img/icons/shop-icon.png);
+    width: 80px !important;
+}
+
+.menushop {
+    height: 86px;
+    width: 60px;
+    background-repeat: repeat-x;
+    background-position: left center;
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    float: left;
+    margin-right: 14px;
+    margin-top: -14px;
+}
+.titreshop {
+line-height: 59px;}
+.headshop {
+    clear: both;
+    min-height: 50px;
+    padding: 10px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16px;
+    line-height: 6px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto, sans-serif;
+}
+.submenushop {
+    width: 100%;
+    padding: 9px;
+    font-style: unset;
+}
+.titresubmenushop {
+    display: -webkit-inline-box;
+    top: -3px;
+    position: relative;
+    padding-left: 5px;}
+.boxleft-shopcorp {
+    height: auto;
+}
+.boxcontainer-shop {
+    float: right;
+    width: 78%;
+}
+.box-new-shop {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 33%;
+    display: inline-table;
+}
+.feature {}
+.titrefeature {
+    width: 248px;
+    background-color: red;
+    position: absolute;
+    padding: 15px;
+    background: rgba(0,0,0,.6);
+    bottom: 9px;
+    color: #fff;
+    font-size: 119%;
+}
+.feature-img {
+	width: 100%;
+    height: 200px;
+    background-position: 50%;
+}
+.boxinfo-shop {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 58%;
+    display: inline-table;
+    background-image: url(../img/gallery/frank_jetons.gif);
+    background-repeat: no-repeat;
+    background-position: 2% 56%;
+}
+.boxinfoeco-shop {
+	    background: #fff;
+	    border-radius: 2px;
+	    padding: 10px;
+	    position: relative;
+	    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+	    margin-bottom: 10px;
+	    width: 58%;
+	    display: inline-table;
+	    background-image: url(../img/gallery/rule3.png);
+	    background-repeat: no-repeat;
+	    background-position: 113% 35%;
+}
+.boxtext-shop {
+    width: 90%;
+    float: right;
+    height: 159px;
+}
+.boxvip-shop {
+    background: #f8f8f8;
+    border-radius: 2px;
+    padding: 22px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 41%;
+    display: inline-table;
+    background-image: url(http://game.mobbahotel.fr/c_images/catalogue/feature_cata_vert_sept18_bun1.png);
+    background-repeat: no-repeat;
+    background-position: 0% 75%;
+    float: right;
+    height: 117px;
+    background-size: cover;
+}
+.boxtext-vip {
+    position: absolute;
+    font-size: 119%;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #484a4a;
+    padding: 8px;
+    border: 2px #323232 solid;
+    width: 100%;
+    bottom: 0;
+    margin-left: -22px;
+}
+.boxcoin-shop {
+    background: #FFC107;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 41%;
+    display: inline-grid;
+    background-image: url(http://game.mobbahotel.fr/c_images/catalogue/feature_celestial.png);
+    background-repeat: no-repeat;
+    background-position: 27% 121%;
+    float: right;
+    height: 117px;
+    margin-top: -127px;
+}
+.boxtext-coin {
+    height: 47px;
+    position: absolute;
+    font-size: 119%;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #5be2a5;
+    padding: 8px;
+    border: 2px #49c58d solid;
+    width: 100%;
+    bottom: 0;
+}
+.boxtime-shop {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 40%;
+    display: inline-table;
+    float: right;
+}
+.boxtext-time {
+    font-size: 22px;
+}
+.box-rares-shop {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-table;
+    background-repeat: no-repeat;
+    background-position: 113% 35%;
+    height: 276px;
+}
+.titre-rares-shop {
+    font-size: 25px;
+}
+.mini-rares-box {
+    width: 85px;
+    height: 85px;
+    background-color: #98cddd;
+    border-radius: 53px;
+}
+.name-rares {
+    text-align: center;
+    font-weight: bold;
+    font-family: normal;
+    -webkit-font-smoothing: antialiased!important;
+}
+.nombre-rares {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: -39px;
+    font-weight: 400;
+    width: 32px;
+    line-height: 29px;
+    float: right;
+    height: 33px;
+    background-color: #5592a8;
+    border-radius: 54px;
+    position: relative;
+    font-family: normal;
+    -webkit-font-smoothing: antialiased!important;
+}
+.boxraresr {
+	width: 85px;
+	display: inherit;
+	padding-right: 12px;
+}
+.textinfoeco {
+    width: 308px;
+    font-size: 12px;
+    height: 204px;
+}
+.boxinfocouronnes-shop {
+	background: #fff;
+	border-radius: 2px;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+	margin-bottom: 10px;
+	width: 40%;
+	display: inline-table;
+	float: right;
+	font-size: 13px;
+	font-family: Roboto, sans-serif;
+}
+.boxpaiement-shop {
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .10), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    margin-bottom: 10px;
+    width: 58%;
+    display: inline-table;
+}

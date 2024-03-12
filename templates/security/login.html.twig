@@ -1,95 +1,167 @@
-<html>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Habbo: World Connected</title>
-
-    <link rel="icon"  href="favicon.ico" />
-    <link type="text/css" href="css/index.css" rel="stylesheet">
-    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BackHabbo - Accueil</title>
+<link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/560313277297590272/CurGL3px_400x400.png" />
+<link href="assets/css/master.css" rel="stylesheet">
+<link href="assets/css/cloud.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel=stylesheet>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<meta name="Geography" content="France" />
+<meta name="country" content="France" />
+<meta name="Language" content="French" />
+<meta name="Copyright" content="BackHabbo" />
+<link rel="canonical" href="https://backhabbo.fr/ "/>
+<meta name="Habbo" content="Habbo" />
+<meta name="identifier-url" content="https://backhabbo.fr" />
+<meta name="category" content="Habbo Fansite">
+<meta name="reply-to" content="contact@backhabbo.fr">
+<meta property="og:site_name" content="BackHabbo" />
+<meta property="og:title" content="BackHabbo" />
+<meta property="og:url" content="https://backhabbo.fr" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="BackHabbo - Découvre désormais notre fansite spécialisé pour le serveur HabboCity incluant toutes les nouveautés ainsi que les modifications apportés!" />
+<meta property="og:image" content="//backhabbo.fr/app/app.png" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="Author" content="Tiger & Python" />
+<meta name="description" content="BackHabbo - Découvre désormais notre fansite spécialisé pour le serveur HabboCity incluant toutes les nouveautés ainsi que les modifications apportés!" />
+<meta name="keywords" content="BackHabbo, City, HabboCity, habbo, Habbo, Habbo hotel, habbo.fr, habbo retro, habbo retro gratuit, virtuel, monde, réseau social, habbo gratuit, habbo credit, habbo france, credit, credits, gratuit, communautée, avatar, chat, connectée, adolescence, jeu de rôle, rejoindre, social, groupes, habbocity, habbocity.fr, forums, sécurité, jouer, jeux, amis, rares, ados, jeunes, collector, collectionner, créer, connecter, meuble, mobilier, animaux, déco, design, appart, décorer, partager, badges, musique, chat vip, fun, sortir, mmo, mmorpg, jeu massivement multijoueur" />
+<meta name="build" content="BackHabboCMS 0.1" />
+<meta name="google-site-verification" content="Y80twTukVQK8ilPbQo0Xjg75ujSPaQ1gzV3W0MpODjo" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
 <body>
-    <!--<div class="error-msg">Die Felder müssen ausgefüllt sein.</div>-->
 
-    <div class="hero">
-        <div class="hotel"></div>
-    </div>
+	<div class="loader"></div>
 
-    <div id="header-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo"></div>
-                    
+<div id="clouds">
+
+  <div class="cloud x1">
+  </div>
+
+  <div class="cloud x1_5">
+  </div>
+
+  <div class="cloud x2">
+  </div>
+
+  <div class="cloud x3">
+  </div>
+
+  <div class="cloud x4">
+  </div>
+
+  <div class="cloud x5">
+  </div>
+
+</div>
+	<div class="bg-image rotation-90"></div>
+	<div class="page top-221">
+		<form method="post">
+
+		<div class="box-connect-index padding-r-19 ">
+			<div class="logo"></div>
+
+            <form method="post">
+                {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="login-position">
-                    <h2>Bienvenue</h2>
+                {% endif %}
 
+			<div class="input-group">
+  				<span class="input-group-addon glyphicon fas fa-user top-18 txt-blue"></span>    
+                  <input type="text" value="{{ last_username }}" name="username" id="inputUsername"
+                  class="input bt-white txt-size-14 txt-blue bold input-img-psd" autocomplete="username" required autofocus>
+			</div>
+<br>
+			<div class="input-group">
+  				<span class="input-group-addon glyphicon fas fa-lock top-19 txt-grey"></span>  
+                  <input type="password" name="password" id="inputPassword" class="input bt-white txt-size-14 bold txt-grey input-img-mdp"
+                  autocomplete="current-password" required>
 
-                    <form method="post">
-                        {% if error %}
-                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}
-                        </div>
-                        {% endif %}
+              <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"> 
+				
+			</div>
+<br>
+			<div class="check">
+  				<a href="#ex2" rel="modal:open"><label class="text txt-white txt-size-16 mg-3">Mot de passe oublié ?</label></a>
+  			</div>
 
+			<button type="submit" class="button bt-green text txt-white">S'identifier</button>
+			<a href="{{ path('app_register') }}"  class="yellow-border button margin-top-13 padding-top-15 padding-bottom-15 bt-yellow text txt-white">S'inscrire et <br>découvrir</a>
+			</div>
+			<div class="box-registre-index img-article-index padding-l-19 padding-r-19">
+<div class="account-title">
+S'inscrire désormais et tout ça <span>GRATUITEMENT !</span>
+</div>
 
+		</div>
+</form>
+		<div class="image-index"></div>
 
-                        <h1 class="h3 mb-3 font-weight-normal">Se connecter </h1>
-                        <label for="inputUsername">Pseudo</label>
-                        <input type="text" value="{{ last_username }}" name="username" id="inputUsername"
-                            class="form-control" autocomplete="username" required autofocus>
-                        <label for="inputPassword"> Mot de passe </label>
-                        <input type="password" name="password" id="inputPassword" class="form-control"
-                            autocomplete="current-password" required>
+		
+		<div class="footer txt">
+	<div class="col-50 left">&copy; Copyright 2023 - BackHabbo</div>
+	<div class="col-50 right" style="text-align: right;">BackHabbo est un projet indépendant à but non lucratif.</div>
+</div>
+		</div>
+	</div>
+	
 
-                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+<div id="ex2" class="box-register"  style="width: auto; display: none; margin-top: 158px; max-width: 594px; height: 400px;"> 
+		<div class="img-register"></div>
+		<a href="#" rel="modal:close"></a>
+<div class="col-50 left">
+<form method="post">
+			<div class="input-group">
+  					<span class="input-group-addon glyphicon fas fa-user top-18 txt-blue"></span>    
+					<input class="input bt-white txt-size-14 txt-blue bold input-img-psd" name="pseudo" placeholder="Pseudonyme">
+			</div>
+				
+			<div class="input-group margin-top-10">
+  				<span class="input-group-addon glyphicon top-12 fas fa-envelope top-18 txt-blue"></span>    
+				<input class="input bt-white txt-size-14 txt-blue bold input-img-psd" name="mail" placeholder="Adresse Mail">
+			</div>
+		
+</div>
 
-                        
-
-                        <div class="checkbox mb-3">
-                            <label>
-                                <input type="checkbox" name="_remember_me"> Se souvenir de moi
-                            </label>
-                        </div>
-
-                        <button class="btn big green register-button" type="submit">
-                            Connexion
-                        </button>
-                        
-                        
-                    </form>
-
-                    <div class="clear"></div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>ou</p>
-                        </div>
-                        <div class="col-md-12">
-                            <a  href="{{ path('app_register') }}" class="btn big orange register-button">Inscription</a>
-                        </div>
-                        
-                        
-         
-
-                    </div>
-
-                </div> 
-
-            </div>
+<div class="col-50 right">
+	<div class="txt txt-size-10" style="color: #000000;"> Indique nous ton pseudonyme pour la réinitialisation de ton mot de passe.</div>
+	<br>
  
-        </div>
-      
-       
-    </div>
+	<div class="txt txt-size-10 padding-top-21" style="color: #000000;"> Nous aurons besoin de ton adresse mail pour te renvoyer ton mot de passe en cas d'oublie ou te faire contacter par le support par exemple.
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+<button name="submit" type="submit" class="button bt-green text right relative text-align txt-white" style="width: 71px; bottom: 59px;"><i class="far fa-arrow-alt-circle-right txt-size-37"></i></button>
+</div>
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+         $(window).load(function() {
+             $(".loader").fadeOut(3000);
+         });
+</script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"En poursuivant votre navigation sur notre site internet, vous acceptez l’utilisation de cookies afin de nous permettre d’améliorer votre expérience utilisateur.","dismiss":"OK","learnMore":null,"link":null,"theme":"light-bottom"};
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </body>
 
 </html>
+  

@@ -2,153 +2,87 @@
 
 
 {% block body %}
+{% if app.user %}
+<div class="contenu" style="width: 980px;">
+	<div class="soixantesept">
+		<div class="profil_user">
 
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-            <div id="news-content">
-                <div class="news-article show"
-                    style="background-image:url(https://ogimg.infoglobo.com.br/in/5192232-4dc-78c/FT1086A/760/1306_habbo.jpg)">
-                    <div class="shadow"></div>
+			<div class="left">
+				<img
+					src="https://imager.habbo-alpha.ws/?figure={{ app.user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+			</div>
 
-                    <div class="news-content">
-                        <div class="news-title">Lorem ipsum</div>
-                        <div class="news-short-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </div>
-                    </div>
+			<div class="right">
 
-                    <div class="details-box">
-                        <div class="back-news"><i class="fal fa-angle-left"></i></div>
+				<div class="uinfo_block" style="width: 300px">
+					<p>Votre Pseudo :</p>
+					<span> {{ app.user.username }}
+						<br>
+					<p>Votre Motto :</p>
+					<span> {{ app.user.motto }}
+						
+				</div>
 
-                        <div class="authors-details">
-                            <div class="written-by">
-                                <b>Écrit par:</b>
-                                <span>Zorked</span>
-                            </div>
-                        </div>
 
-                        <a href="news.php" class="btn green news-slider-btn">Weiter lesen</a>
 
-                        <div class="next-news"><i class="fal fa-angle-right"></i></div>
-                    </div>
-                </div>
-                <div class="news-article show"
-                    style="background-image:url(https://sm.ign.com/ign_ap/screenshot/default/fgajfxrx0aaxmgs_2934.png)">
-                    <div class="shadow"></div>
+				<div class="entrer">
+					<a class="btn" href="./hotel" target="_blank">Entrer dans l'hôtel</a>
+				</div>
+				<div class="badge_pos">
+				</div>
+			</div>
 
-                    <div class="news-content">
-                        <div class="news-title">Lorem ipsum 22222</div>
-                        <div class="news-short-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </div>
-                    </div>
+		</div>
 
-                    <div class="details-box">
-                        <div class="back-news"><i class="fal fa-angle-left"></i></div>
+		<div class="profil_slider">
+			{% for CmsActualites in allNews %}
 
-                        <div class="authors-details">
-                            <div class="written-by">
-                                <b>Écrit par:</b>
-                                <span>Ashura</span>
-                            </div>
-                        </div>
 
-                        <a href="news.php" class="btn green news-slider-btn">Weiter lesen</a>
+			<div class="slide" id="0" style="background: url('{{ CmsActualites.image }}') left bottom no-repeat;">
+				<div class="titre"><b> {{ CmsActualites.title }} </b></div>
 
-                        <div class="next-news"><i class="fal fa-angle-right"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <iframe src="https://discord.com/widget?id=1117444146412671067&theme=dark" width="340" height="250"
-                allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-        <div class="col-7">
-            <div id="content-box">
-                
-                <div class="title-box png20">
-                    <div class="title">Dernières Actualités</div>
-                    <div class="desc">Qu'est-ce qui est annoncé actuellement au Habbo Hotel ?</div>
-                </div>
-                
-                <div class="png20">
-                    {% for CmsActualites in allNews %}
-                    <div class="campaigns">
-                        <a href="{{ path('me_news', { 'id': CmsActualites.id })}}">
-                            <div class="img"
-                                style="background-image:url('{{ CmsActualites.image }}')">
-                            </div>
-                            <div class="details">
-                                <div class="title">{{ CmsActualites.title }}</div>
-                                <div class="desc">{{ CmsActualites.description }}</div>
-                            </div>
-                        </a>
-                    </div>
-                    {% endfor %}
+				<div class="description">{{ CmsActualites.description }}</div>
 
-                   
-                </div>
-            </div>
-        </div>
 
-        <div class="col-5">
+				<a href="{{ path('me_news', { 'id': CmsActualites.id })}}">
+					<div class="btn">Lire la suite</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
 
-            <div id="content-box" style="max-height:300px">
-                <div class="title-box png20">
-                    <div class="title">Evénements</div>
-                    <div class="desc">Découvrez les derniers événements sur Habbo</div>
-                </div>
+		<br>
 
-                <div class="png20">
-                    {% for CmsEvenement in allEvents %}
-                    <div class="event">
+			
+	</div>
 
-                        <div class="icon" style="width:13%"><i class="fa fa-play fa-2x" aria-hidden="true"></i></div>
-                        <div class="info" style="width:87%">
+	<div class="trentetrois">
 
-                            <div class="event_title">{{ CmsEvenement.title }}</div>
-                            <div class="event_date">Du
-                                <b>{{ CmsEvenement.datedebut }}</b> au
-                                <b>{{ CmsEvenement.datefin }}</b>
-                            </div>
-                            <div style="clear: both"></div>
-                            <div class="event_desc">{{ CmsEvenement.description }}</div>
-                        </div>
-                        <div style="clear: both"></div>
-                    </div>
-                    {% endfor %}
+		<br>
+		<div class="box">
+			<div class="titre vert">Evenement a venir </div>
+			<div class="contenu_box">
+				<div class="profil_droite">
+					{% for CmsEvenement in allEvents %}
+					<a href="./room/13" target="_blank">
+						<div class="statut">
+							<img src="./dist/img/rooms_green.gif">
+						</div>
+						<div class="infos">
+							<h1>{{ CmsEvenement.title }}</h1>
 
-                </div>
-            </div>
-            <div class="col-12">
-
-                <div id="content-box" style="max-height:300px">
-                    <div class="title-box png20">
-                        <div class="title">Musiques de la semaine </div>
-                        <div class="desc">Découvrez les musiques de la semaine sur Habbo</div>
-                    </div>
-    
-                    <div class="png20" >
-                        {% for CmsMusique in allMusique %}
-                        <div class="event">
-    
-                            <div class="icon" style="width:13%">
-                                <img class="imagemusique" src="{{ CmsMusique.image }}" ></img>
-                            </div>
-                            <div class="info" style="width:87%">
-    
-                                <div class="event_title">{{ CmsMusique.title }}</div>
-                                <div style="clear: both"></div>
-                                <div class="event_desc"> Clique <a href="{{ CmsMusique.link }}" target="_blank" >ici</a> pour ecouter </div>
-                            </div>
-                            <div style="clear: both"></div>
-                        </div>
-                       {% endfor %}
-    
-                    </div>
-                </div>
-        </div>
-        {% endblock %}
+							<p> Du {{ CmsEvenement.datedebut }} au
+								{{ CmsEvenement.datefin }}.</p>
+								
+						</div>
+		
+					</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+{% endif %}
+{% endblock %}

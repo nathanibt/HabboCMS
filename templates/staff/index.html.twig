@@ -1,192 +1,180 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div id="title-headline">Administration</div>
-        </div>
-    </div>
-
-    
-
-    <div class="row">
-    {% set has_users = false %}
+		
+<div class="contenu" style="width: 980px;">
+	<div class="cent">
+		<div class="box">
+			<div class="titre rouge">Direction & Gestion</div>{% set has_users = false %}
     {% for user in users %}
     {% if user.rank == 7 %}
     {% set has_users = true %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header">
-                    <div class="header">
-                </div>
-                <div class="overlay"><div class="work">Administrateur</div>
-                <div class="username">{{ user.username }}</div>
-            </div>
-        </div>
-                <div class="avatarimage" style="background-image:url(https://imaging.habibo.me/imaging/?figure={{ user.look }}&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">{{ user.motto }}</div>
-                    {% if user.online == 1 %}
-                    <div class="online-status online"><div class="dot"></div></div>
-                        {% else %}
-                    <div class="online-status offline"><div class="dot"></div></div>
-                        {% endif %}
-                    
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>   
-
-        {% endif %}
+			<div class="contenu_box" style="margin-bottom: -5px">
+				
+    <div class="equipe">
+				
+					
+					<div class="user">
+						<div class="left hint--right" aria-label="Dirigeant, Gérant">
+							<a href="./home.php">
+								<img src="https://imager.habbo-alpha.ws/?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+							</a>
+						</div>
+						<div class="right">
+							<div class="uinfo_block">
+								<p>Nom d'utilisateur</p>
+								<span> {{ user.username }} </span>
+							</div>
+							<div class="uinfo_block" style="width: 300px">
+								<p>Motto</p>
+								<span> {{ user.motto }} </span>
+							</div>
+							<div class="entrer">								{% if user.online == 1 %}
+								<img src="/dist/img/online.png" />
+                                {% else %}
+                                <img src="/dist/img/offline.png" />
+								{% endif %}
+							</div>
+						</div>	
+					</div>
+	
+				</div>
+			</div>		    
+            {% endif %}
         {% endfor %}
-        
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div id="title-headline">Gérant</div>
-        </div>
-    </div>
+		</div>
+    	
+		<br>
 
-    <div class="row">
-        {% set has_users = false %}
-        {% for user in users %}
-        {% if user.rank == 6 %}
-        {% set has_users = true %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Gérant</div><div class="username">{{ user.username }}</div></div></div>
-                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">{{ user.motto }}</div>
-                    {% if user.online == 1 %}
-                    <div class="online-status online"><div class="dot"></div></div>
-                        {% else %}
-                    <div class="online-status offline"><div class="dot"></div></div>
-                        {% endif %}
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>
-        
-        {% endif %}
-        {% endfor %}
-        {% if not has_users %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Gérant</div><div class="username">Personne</div></div></div>
-                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">Personne</div>
-                    <div class="online-status offline"><div class="dot"></div></div>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>
-        {% endif %}
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div id="title-headline">Modérateur</div>
-        </div>
-    </div>
+	
+		<div class="contenu" style="width: 980px;">
+	<div class="cent">
+		<div class="box">
+			<div class="titre rouge">Poste Spéciaux</div>
+			{% for user in users %}
+    {% if user.rank == 6 %}
+    {% set has_users = true %}
+			<div class="contenu_box" style="margin-bottom: -5px">
+				<div class="equipe">
 
-    <div class="row">
-        {% set has_users = false %}
-        {% for user in users %}
-        {% if user.rank == 5 %}
-        {% set has_users = true %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Modérateur</div><div class="username">{{ user.username }}</div></div></div>
-                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure={{ user.look }}&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">{{ user.motto }}</div>
-                    {% if user.online == 1 %}
-                    <div class="online-status online"><div class="dot"></div></div>
-                        {% else %}
-                    <div class="online-status offline"><div class="dot"></div></div>
-                        {% endif %}
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>
-        
-        {% endif %}
-        {% endfor %}
-        {% if not has_users %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Modérateur</div><div class="username">Personne</div></div></div>
-                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">Personne</div>
-                    <div class="online-status offline"><div class="dot"></div></div>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>
-        {% endif %}
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div id="title-headline">Animateur</div>
-        </div>
-    </div>
+					<div class="user">
+						<div class="left hint--right" aria-label="Dirigeant, Gérant">
+							<a href="./home.php">
+								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+							</a>
+						</div>
+						<div class="right">
+							<div class="uinfo_block">
+								<p>Nom d'utilisateur</p>
+								<span>{{ user.username }} </span>
+							</div>
+							<div class="uinfo_block" style="width: 300px">
+								<p>Motto</p>
+								<span>{{ user.motto }}</span>
+							</div>
+							<div class="entrer">
+								
+								<img src="/dist/img/online.png" />
 
-    <div class="row">
-        {% set has_users = false %}
-        {% for user in users %}
-        {% if user.rank == 4 %}
-        {% set has_users = true %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Animateur</div>
-                <div class="username">{{ user.username }}</div>
-                </div></div>
-                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">{{ user.motto }}</div>
-                    {% if user.online == 1 %}
-                    <div class="online-status online"><div class="dot"></div></div>
-                        {% else %}
-                    <div class="online-status offline"><div class="dot"></div></div>
-                        {% endif %}
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>
-        
-        {% endif %}
-        {% endfor %}
-        {% if not has_users %}
-        <div class="col-4">
-            <a href="" class="staff-box">
-                <div class="staff-header"><div class="header"></div><div class="overlay"><div class="work">Animateur</div><div class="username">Personne</div></div></div>
-                <div class="avatarimage" style="background-image:url(https://www.habbo.de/habbo-imaging/avatarimage?figure=hr-155-31.lg-275-82.hd-180-1391.ch-3323-73-1408.sh-295-1408&size=l)"></div>
-                <div class="clear"></div>
-                <div class="png">
-                    <div class="motto">Personne</div>
-                    <div class="online-status offline"><div class="dot"></div></div>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </a>
-        </div>
-        {% endif %}
-    </div>
+								
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+
+		<br>
+
+
+		<div class="box">
+			<div class="titre vert">Modérateurs</div>
+			{% for user in users %}
+			{% if user.rank == 5 %}
+			{% set has_users = true %}
+			<div class="contenu_box" style="margin-bottom: -5px">
+				<div class="equipe">
+
+					<div class="user">
+						<div class="left hint--right" aria-label="Animations, Jeux, Evénements">
+							<a href="./home.php">
+								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+							</a>
+						</div>
+						<div class="right">
+							<div class="uinfo_block">
+								<p>Nom d'utilisateur</p>
+								<span>{{ user.username }}</span>
+							</div>
+							<div class="uinfo_block" style="width: 300px">
+								<p>Motto</p>
+								<span>{{ user.motto }}</span>
+							</div>
+							<div class="entrer">
+
+								<img src="/dist/img/online.png" />
+
+								<img src="/dist/img/offline.png" />
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+
+		<br>
+
+		<div class="box">
+			<div class="titre orange">Animateurs</div>
+			{% for user in users %}
+			{% if user.rank == 4 %}
+			{% set has_users = true %}
+			<div class="contenu_box" style="margin-bottom: -5px">
+				<div class="equipe">
+
+					<div class="user">
+						<div class="left hint--right" aria-label="Modération, Surveillance, Respect">
+							<a href="./home.php">
+								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+							</a>
+						</div>
+						<div class="right">
+							<div class="uinfo_block">
+								<p>Nom d'utilisateur</p>
+								<span>{{ user.username }}</span>
+							</div>
+							<div class="uinfo_block" style="width: 300px">
+								<p>Motto</p>
+								<span>{{ user.motto }}</span>
+							</div>
+							<div class="entrer">
+								
+								<img src="/dist/img/online.png" />
+								
+							
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+</div>
+
+
+
+<br clear="both">
+</div>
+	</div>
 
 {% endblock %}
