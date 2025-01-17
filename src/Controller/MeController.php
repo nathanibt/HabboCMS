@@ -22,9 +22,11 @@ class MeController extends AbstractController
     /**
      * @Route("/me", name="app_me")
      */
-    public function index(EntityManagerInterface $entityManager, CmsEvenementRepository $CmsEvenementRepository,  CmsActualitesRepository $CmsActualitesRepository, CmsMusiqueRepository $CmsMusiqueRepository): Response
+    public function index(EntityManagerInterface $entityManager, CmsEvenementRepository $CmsEvenementRepository,  CmsActualitesRepository $CmsActualitesRepository, CmsMusiqueRepository $CmsMusiqueRepository, UsersRepository $UsersRepository): Response
     {
         $user = $this->getUser();
+
+        $users = $UsersRepository->getUsersInfo();
 
         $allEventFromBDD = $CmsEvenementRepository->findAll();
 
@@ -38,6 +40,7 @@ class MeController extends AbstractController
             'allEvents' => $allEventFromBDD,
             'allMusique' => $allMusiqueFromBDD,
             'allNews' => $allNewsFromBDD,
+            'users' => $users,
         ]);
     }
 

@@ -257,7 +257,7 @@ nav > .contenu > .left ul li:hover > .dropdown { display: block; }
 .contenu_box > .equipe > .erreur { font-size: 14px;padding: 12px;color: white;text-shadow: 0 1px 2px rgba(0,0,0,0.4);border-radius: 3px;background: #c21f1f;background-image: url(../img/buttons_bg.png);background-position: left center;text-align: center; }
 .contenu_box > .equipe > p { text-transform: uppercase;font-size: 13px;color: #888; }
 .contenu_box > .equipe > .user { height: 120px;float: left;width: calc(100% / 2 - 5px);margin-top: 5px;margin-bottom: 5px;overflow: hidden;background: url(../img/hotel_view.png) no-repeat left bottom;border-radius: 3px;margin-right: 10px; }
-.contenu_box > .equipe > .user:nth-child(2n+1){ margin-right: 0; }
+.contenu_box > .equipe > .user:nth-child(2n+1){ margin-right: 5px; }
 .contenu_box > .equipe > .user > .left { height: 120px;background: rgba(0,0,0,0.32);float: left; }
 .contenu_box > .equipe > .user > .left > a > img { filter: drop-shadow(1px 1px #eee) drop-shadow(-1px -1px #eee) drop-shadow(1px -1px #eee) drop-shadow(-1px 1px #eee);position: relative;top: -22px; }
 .contenu_box > .equipe > .user > .right { float: left;margin: 14px 30px 14px 30px;width: calc(100% - 188px); }

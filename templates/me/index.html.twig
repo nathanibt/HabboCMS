@@ -3,13 +3,15 @@
 
 {% block body %}
 {% if app.user %}
+
 <div class="contenu" style="width: 980px;">
 	<div class="soixantesept">
 		<div class="profil_user">
 
 			<div class="left">
-				<img
-					src="https://imager.habbo-alpha.ws/?figure={{ app.user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+			{% if app.user %}
+				<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ app.user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+			{% endif %}
 			</div>
 
 			<div class="right">
@@ -84,5 +86,6 @@
 	</div>
 </div>
 <br>
+
 {% endif %}
 {% endblock %}
