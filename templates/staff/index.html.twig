@@ -1,180 +1,193 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-		
-<div class="contenu" style="width: 980px;">
-	<div class="cent">
-		<div class="box">
-			<div class="titre rouge">Direction & Gestion</div>{% set has_users = false %}
-    {% for user in users %}
-    {% if user.rank == 7 %}
-    {% set has_users = true %}
-			<div class="contenu_box" style="margin-bottom: -5px">
-				
-    <div class="equipe">
-				
-					
-					<div class="user">
-						<div class="left hint--right" aria-label="Dirige et développe l'hôtel">
-							<a href="./home.php">
-								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
-							</a>
-						</div>
-						<div class="right">
-							<div class="uinfo_block">
-								<p>Nom d'utilisateur</p>
-								<span> {{ user.username }} </span>
-							</div>
-							<div class="uinfo_block" style="width: 300px">
-								<p>Motto</p>
-								<span> {{ user.motto }} </span>
-							</div>
-							<div class="entrer">								{% if user.online == 1 %}
-								<img src="/dist/img/online.png" />
-                                {% else %}
-                                <img src="/dist/img/offline.png" />
-								{% endif %}
-							</div>
-						</div>	
-					</div>
-	
-				</div>
-			</div>		    
-            {% endif %}
-        {% endfor %}
-		</div>
-    	
-		<br>
 
-	
-		<div class="contenu" style="width: 980px;">
-	<div class="cent">
-		<div class="box">
-			<div class="titre bleu">Poste Spéciaux</div>
-			{% for user in users %}
-    {% if user.rank == 6 %}
-    {% set has_users = true %}
-			<div class="contenu_box" style="margin-bottom: -5px">
-				<div class="equipe">
+	<div class="contenu" style="width: 980px;">
+		<div class="cent">
+			<div class="box">
+				<div class="titre rouge">Direction & Gestion</div>
+				{% set has_users = false %}
+				{% for user in users %}
+					{% if user.rank == 7 %}
+						{% set has_users = true %}
+						<div class="contenu_box" style="margin-bottom: -5px">
 
-					<div class="user">
-						<div class="left hint--right" aria-label="Dirigeant, Gérant">
-							<a href="./home.php">
-								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
-							</a>
-						</div>
-						<div class="right">
-							<div class="uinfo_block">
-								<p>Nom d'utilisateur</p>
-								<span>{{ user.username }} </span>
-							</div>
-							<div class="uinfo_block" style="width: 300px">
-								<p>Motto</p>
-								<span>{{ user.motto }}</span>
-							</div>
-							<div class="entrer">
-								
-								<img src="/dist/img/online.png" />
+							<div class="equipe">
 
-								
+
+								<div class="user">
+									<div class="left hint--right" aria-label="Dirige et développe l'hôtel">
+										<a href="./home.php">
+											<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+										</a>
+									</div>
+									<div class="right">
+										<div class="uinfo_block">
+											<p>Nom d'utilisateur</p>
+											<span>
+												{{ user.username }}
+											</span>
+										</div>
+										<div class="uinfo_block" style="width: 300px">
+											<p>Motto</p>
+											<span>
+												{{ user.motto }}
+											</span>
+										</div>
+										<div class="entrer">
+											{% if user.online == 1 %}
+												<img src="/dist/img/online.png"/>
+											{% else %}
+												<img src="/dist/img/offline.png"/>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+
 							</div>
 						</div>
-					</div>
-
-				</div>
+					{% endif %}
+				{% endfor %}
 			</div>
-			{% endif %}
-			{% endfor %}
-		</div>
 
-		<br>
+			<br>
 
 
-		<div class="box">
-			<div class="titre vert">Modérateurs</div>
-			{% for user in users %}
-			{% if user.rank == 5 %}
-			{% set has_users = true %}
-			<div class="contenu_box" style="margin-bottom: -5px">
-				<div class="equipe">
+			<div class="contenu" style="width: 980px;">
+				<div class="cent">
+					<div class="box">
+						<div class="titre bleu">Poste Spéciaux</div>
+						{% for user in users %}
+							{% if user.rank == 6 %}
+								{% set has_users = true %}
+								<div class="contenu_box" style="margin-bottom: -5px">
+									<div class="equipe">
 
-					<div class="user">
-						<div class="left hint--right" aria-label="Surveille l'hôtel">
-							<a href="./home.php">
-								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
-							</a>
-						</div>
-						<div class="right">
-							<div class="uinfo_block">
-								<p>Nom d'utilisateur</p>
-								<span>{{ user.username }}</span>
-							</div>
-							<div class="uinfo_block" style="width: 300px">
-								<p>Motto</p>
-								<span>{{ user.motto }}</span>
-							</div>
-							<div class="entrer">
+										<div class="user">
+											<div class="left hint--right" aria-label="Dirigeant, Gérant">
+												<a href="./home.php">
+													<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+												</a>
+											</div>
+											<div class="right">
+												<div class="uinfo_block">
+													<p>Nom d'utilisateur</p>
+													<span>{{ user.username }}
+													</span>
+												</div>
+												<div class="uinfo_block" style="width: 300px">
+													<p>Motto</p>
+													<span>{{ user.motto }}</span>
+												</div>
+												<div class="entrer">
 
-								<img src="/dist/img/online.png" />
+													<img src="/dist/img/online.png"/>
 
-								<img src="/dist/img/offline.png" />
 
-							</div>
-						</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
 					</div>
 
+					<br>
 
-				</div>
-			</div>
-			{% endif %}
-			{% endfor %}
-		</div>
 
-		<br>
+					<div class="box">
+						<div class="titre vert">Modérateurs</div>
+						{% for user in users %}
+							{% if user.rank == 5 %}
+								{% set has_users = true %}
+								<div class="contenu_box" style="margin-bottom: -5px">
+									<div class="equipe">
 
-		<div class="box">
-			<div class="titre orange">Animateurs</div>
-			{% for user in users %}
-			{% if user.rank == 4 %}
-			{% set has_users = true %}
-			<div class="contenu_box" style="margin-bottom: -5px">
-				<div class="equipe">
+										<div class="user">
+											<div class="left hint--right" aria-label="Surveille l'hôtel">
+												<a href="./home.php">
+													<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+												</a>
+											</div>
+											<div class="right">
+												<div class="uinfo_block">
+													<p>Nom d'utilisateur</p>
+													<span>{{ user.username }}</span>
+												</div>
+												<div class="uinfo_block" style="width: 300px">
+													<p>Motto</p>
+													<span>{{ user.motto }}</span>
+												</div>
+												<div class="entrer">
 
-					<div class="user">
-						<div class="left hint--right" aria-label="Anime l'hôtel">
-							<a href="./home.php">
-								<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure=hd-190-3.lg-1000000131-1285.sh-61156428-62.hr-93483451-1103.ch-990000121-62-62&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
-							</a>
-						</div>
-						<div class="right">
-							<div class="uinfo_block">
-								<p>Nom d'utilisateur</p>
-								<span>{{ user.username }}</span>
-							</div>
-							<div class="uinfo_block" style="width: 300px">
-								<p>Motto</p>
-								<span>{{ user.motto }}</span>
-							</div>
-							<div class="entrer">
-								
-								<img src="/dist/img/online.png" />
-								
-							
-							</div>
-						</div>
+													<img src="/dist/img/online.png"/>
+
+													<img src="/dist/img/offline.png"/>
+
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
 					</div>
-				
-				</div>
+
+					<br>
+
+			<div class="box">
+				<div class="titre orange">Animation</div>
+				{% set has_users = false %}
+				{% for user in users %}
+					{% if user.rank == 4 %}
+						{% set has_users = true %}
+						<div class="contenu_box" style="margin-bottom: -5px">
+
+							<div class="equipe">
+
+
+								<div class="user">
+									<div class="left hint--right" aria-label="Anime l'hôtel">
+										<a href="./home.php">
+											<img src="https://www.habbo.it/habbo-imaging/avatarimage?figure={{ user.look }}&direction=2&head_direction=3&gesture=sml&action=wav&size=l">
+										</a>
+									</div>
+									<div class="right">
+										<div class="uinfo_block">
+											<p>Nom d'utilisateur</p>
+											<span>
+												{{ user.username }}
+											</span>
+										</div>
+										<div class="uinfo_block" style="width: 300px">
+											<p>Motto</p>
+											<span>
+												{{ user.motto }}
+											</span>
+										</div>
+										<div class="entrer">
+											{% if user.online == 1 %}
+												<img src="/dist/img/online.png"/>
+											{% else %}
+												<img src="/dist/img/offline.png"/>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+
+
+				<br clear="both">
 			</div>
 		</div>
-		{% endif %}
-		{% endfor %}
-</div>
 
-
-
-<br clear="both">
-</div>
-	</div>
-
-{% endblock %}
+	{% endblock %}
